@@ -1,4 +1,4 @@
-window.onload = function () {
+
 
   var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
         'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
@@ -9,7 +9,9 @@ window.onload = function () {
 
   var word ;              // Selected word
   var guess ;             // Geuss
-  var guesses = [ ];      // Stored guesses
+  var guesses = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+        'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's',
+        't', 'u', 'v', 'w', 'x', 'y', 'z'];      // Stored guesses
   var lives ;             // Lives
   var counter ;           // Count correct geusses
   var space;              // Number of spaces in word '-'
@@ -41,11 +43,11 @@ window.onload = function () {
   // Select Catagory
   var selectCat = function () {
     if (chosenCategory === categories[0]) {
-      catagoryName.innerHTML = "The Chosen Category Is Premier League Football Teams";
+      catagoryName.innerHTML = "Think of a WDI12 Student";
     } else if (chosenCategory === categories[1]) {
-      catagoryName.innerHTML = "The Chosen Category Is Films";
+      catagoryName.innerHTML = "Think of a Movie";
     } else if (chosenCategory === categories[2]) {
-      catagoryName.innerHTML = "The Chosen Category Is Cities";
+      catagoryName.innerHTML = "Think of a City";
     }
   }
 
@@ -182,9 +184,9 @@ window.onload = function () {
   // Play
   play = function () {
     categories = [
-        ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united"],
-        ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"],
-        ["manchester", "milan", "madrid", "amsterdam", "prague"]
+        ["andres-espinosa", "angelo-brown", "billy-keating", "khoi-le", "mike-flores", "rae-owens", "chris-jaffier"],
+        ["matrix", "ghost-busters", "gladiator", "finding-nemo", "the-legend"],
+        ["columbus", "houston", "new-york-city", "chicago", "los-angeles"]
     ];
 
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
@@ -215,4 +217,18 @@ window.onload = function () {
     context.clearRect(0, 0, 400, 400);
     play();
   }
-}
+
+//
+// var time = document.getElementById("status");
+//
+//  var countDown = (10, "status");
+//   function countDown(secs, elem) {
+//     var element = document.getElementById(elem);
+//     time.innerHTML = “You got” + secs + “seconds” ;
+//       if (secs < 1) {
+//       clearTimeout(timer);
+//       showLives.innerHTML = "You Loose";
+// }
+//        secs—;
+//        var timer = setTimeout(“countDown(“+secs+”, “‘+elem+’”)”, 1000);
+// }
