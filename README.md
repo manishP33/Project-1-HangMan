@@ -1,4 +1,7 @@
 # Project-1-HangMan
+I tried to create a well known game called Hangman. Used Html, css and javascript,most of was css and javascript.Got success to execute most part of it. Did lot research on the game and came up with few ideas.
+When collecting requirements, came up with few designs. But while I was implementing codes, which took half of my life, only one design was perfect for my project. 
+It's running smooth for now but need more changes, also need to add scoreboard and timer for the game.
 
 # User Story :
 
@@ -16,6 +19,7 @@
 
 # Unsolved problems:
 * Working on setting timer for game, need to fix some code to execute it.
+
 
 # For fonts:
 https://fonts.googleapis.com/css?family=UnifrakturCook:700
