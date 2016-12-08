@@ -59,7 +59,8 @@ text-shadow: grey 1px 3px 0, #aba8a8 1px 13px 5px;
 .gamePageBackground {
   background-image: url("imgP/white2.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  
 }
 
 .wrappper {
@@ -73,9 +74,10 @@ text-shadow: grey 1px 3px 0, #aba8a8 1px 13px 5px;
 }
 
 div#buttons {
-  width: 650px;
-  position: relative;
-  left: 450px;
+  width: 45%;
+  margin: 0 auto;
+  /*position: relative;
+  left: 450px;*/
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
