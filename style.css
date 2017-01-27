@@ -3,64 +3,41 @@ html{
 }
 body{
   text-align: center;
-  background-color: orange;
+  background-image: url('imgP/background.jpg');
 
+
+
+}
+.container{
+  border: 20px solid black;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-image: url('imgP/background2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 img.dancing {
-  width: 250px;
-  height: 300px;
+  width: 210px;
+  height: 260px;
 
 }
-
-
-.firstPage {
-  background-image: url("imgP/white2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-h1#mainPage {
-  font-size: 90px;
-  text-shadow: 5px 20px 10px black;
-  font-family: 'UnifrakturCook', cursive;
-  color: sienna;
-  margin: 2px;
+img#hangman {
+  width: 50%;
+  height: 150px;
 }
 
 p.mainPageP {
-  color: maroon;
-text-shadow: grey 1px 3px 0, #aba8a8 1px 13px 5px;
-  font-size:40px;
-  font-family: 'Chicle', cursive;
-  margin: 1px;
-  padding-top: 80px;
+  color: brown;
+text-shadow: grey 1px 3px 0, #aba8a8 1px 9px 5px;
+  font-size:30px;
+  font-family: 'Luckiest Guy', cursive;
+  margin-left: 260px;
+  margin-right: 260px;
+  padding-top: 30px;
 
-}
 
-.startGame {
-  background-image:url("imgP/start.jpg");
-  width: 200px;
-  height: 120px;
-  background-position: center;
-  background-size: cover;
-  font-size: 0px;
-}
 
-.welcome {
-  width: 130px;
-  height: 55px;
-  background-color: #99cc99;
-  font-size: 20px;
-  border-radius: 20px;
-  font-style: italic;
-}
-
-.gamePageBackground {
-  background-image: url("imgP/white2.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  
 }
 
 .wrappper {
@@ -74,7 +51,7 @@ text-shadow: grey 1px 3px 0, #aba8a8 1px 13px 5px;
 }
 
 div#buttons {
-  width: 45%;
+  width: 55%;
   margin: 0 auto;
   /*position: relative;
   left: 450px;*/
@@ -86,7 +63,7 @@ div#buttons {
 
 canvas {
   color: black;
-  border: 6px double blue;
+  border: 10px double black;
   padding: 15px;
   border-radius: 10px;
   box-shadow: inset 0 0 30px black;
@@ -95,7 +72,7 @@ canvas {
 h1{
   font-size: 90px;
   text-shadow: 10px 20px 20px black;
-  font-family: 'UnifrakturCook', cursive;
+    font-family: 'Luckiest Guy', cursive;
   color: sienna;
   margin: 2px;
 }
@@ -103,14 +80,15 @@ h1{
 
 
 p {
+  color: white;
   font-size:30px;
-  font-family: 'Chicle', cursive;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #alphabet {
   margin: 15px auto;
   padding: 0;
-  max-width: 900px;
+  max-width: 100%;
 }
 #alphabet:after {
   content: "";
@@ -125,15 +103,15 @@ p {
   width: 35px;
   height: 30px;
   padding-top: 10px;
-  background: lightgreen;
-  color: #006699;
+  background: linear-gradient(to top, grey 40%, black 100%);
+  color: white;
   font-size: 18px;
   cursor: pointer;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -khtml-border-radius: 5px;
-  border: solid 1px #fff;
+  border: solid 2px #fff;
 }
 #alphabet li:hover {
   background: brown;
@@ -155,6 +133,11 @@ p {
   display: inline-block;
   padding: 0 10px;
   font-size: 40px;
+}
+#hold {
+  background-color: lightgrey;
+  margin-left: 265px;
+  margin-right: 265px;
 }
 
 .active {
@@ -182,30 +165,7 @@ p {
   display: block;
 }
 
-button {
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 15px;
-  -khtml-border-radius: 5px;
-  background: green;
-  color: #99cc99;
-  border: 1px solid #fff;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 2em;
-  padding: 18px 10px;
-  width: 180px;
-  margin: 10px;
-  outline: none;
-}
-button:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background: #c1d72e;
-  border: solid 1px #fff;
-  color: #fff;
-}
+
 
 @media (max-width: 767px) {
   #alphabet {
@@ -217,3 +177,112 @@ button:hover {
     padding: 0 0 0 25px;
   }
 }
+button, button:before, button:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 35px;
+}
+
+button {
+    font-family: 'pictos';
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    text-shadow: rgba(0,0,0,0.1) 0px -2px 1px, rgb(255,255,255) 0px 1px 2px;
+
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    margin: 50px auto;
+    position: static;
+    z-index: 50;
+    cursor: pointer;
+    margin-top: 50px;
+
+    background-color: transparent;
+    border: rgba(0,0,0,0.3) 1px solid;
+    border-top-color: rgba(0,0,0,0.1);
+    border-left-color: rgba(0,0,0,0.2);
+    border-right-color: rgba(0,0,0,0.2);
+    border-bottom-color: rgba(0,0,0,0.3);
+    box-shadow: inset rgba(255,255,255,0.3) -5px -30px 10px,
+                inset rgba(255,255,255,0.3) 0px 30px 10px,
+                inset rgba(255,255,255,1) 0px 2px 1px,
+                rgba(0,0,0,0.4) 0px 10px 15px;
+    -webkit-transition: -webkit-box-shadow 0s ease-in-out;
+     -khtml-transition:  -khtml-box-shadow 0s ease-in-out;
+       -moz-transition:    -moz-box-shadow 0s ease-in-out;
+         -o-transition:      -o-box-shadow 0s ease-in-out;
+            transition:         box-shadow 0s ease-in-out;
+
+    background-image:   -webkit-radial-gradient(  50%   0%,  8% 50%, hsla(0,0%,100%,.2) 0%, hsla(0,0%,100%,0) 100%),
+                        -webkit-radial-gradient(  50% 100%, 12% 50%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 100%),
+                        -webkit-radial-gradient(   0%  50%, 50%  7%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 100%),
+                        -webkit-radial-gradient( 100%  50%, 50%  5%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 100%),
+
+                        -webkit-repeating-radial-gradient(  50% 50%, 100% 100%, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   3%, hsla(0,0%,  0%,.1) 3.5%),
+                        -webkit-repeating-radial-gradient(  50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%,.1) 7.5%),
+                        -webkit-repeating-radial-gradient(  50% 50%, 100% 100%, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,0) 2.2%);
+
+}
+
+button:before, button:after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+button:before {
+    z-index: -50;
+    width: 60px;
+    height: 64px;
+
+    margin-top: -15px;
+    margin-left: -11px;
+
+    background: #666666;
+    background: -moz-linear-gradient(left, #666666 0%, #bbbbbb 50%, #666666 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#666666), color-stop(50%,#bbbbbb), color-stop(100%,#666666));
+    background: -webkit-linear-gradient(left, #666666 0%,#bbbbbb 50%,#666666 100%);
+    background: -o-linear-gradient(left, #666666 0%,#bbbbbb 50%,#666666 100%);
+    background: -ms-linear-gradient(left, #666666 0%,#bbbbbb 50%,#666666 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#666666',GradientType=1 );
+    background: linear-gradient(left, #666666 0%,#bbbbbb 50%,#666666 100%);
+
+    box-shadow: #000 0px 0px 2px;
+}
+button:after {
+    z-index: -100;
+    width: 70px;
+    height: 70px;
+    margin-top: -60px;
+    margin-left: -16px;
+    background: rgba(0,0,0,0.1);
+
+    box-shadow: inset rgba(255,255,255,0.1) 0px -5px 5px,
+                rgba(0,0,0,0.1) 0px 3px 3px,
+                rgba(255,255,255,0.05) 0px -3px 3px;
+}
+button:hover {
+    color: rgba(0,0,0,0.6);
+    text-shadow: rgb(255,255,255) 0px 0px 3px;
+    box-shadow: inset rgba(255,255,255,0.4) 0px -30px 15px,
+                inset rgba(255,255,255,0.2) -25px 25px 10px,
+                inset rgba(255,255,255,1) 0px 2px 1px,
+                rgba(0,0,0,0.4) 0px 10px 15px;
+}
+button:active {
+    margin-top: 46px;
+    color: #fff;
+    box-shadow: inset rgba(255,255,255,0.4) 0px -30px 15px,
+                inset rgba(255,255,255,0.2) -25px 25px 10px,
+                inset rgba(255,255,255,1) 0px 2px 1px,
+                rgba(0,0,0,0.4) 0px 2px 3px;
+}
+button:active:before {
+    height: 60px;
+    margin-top: -11px;
+}
+button:active:after {

@@ -100,7 +100,7 @@
     context = myStickman.getContext('2d');
     context.beginPath();
     context.strokeStyle = "black";
-    context.lineWidth = 2;
+    context.lineWidth = 6;
   };
 
     head = function(){

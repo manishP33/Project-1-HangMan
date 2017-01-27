@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <title>Hangman game</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
 
   </head>
 
-  <body class="gamePageBackground">
+  <div class="container">
+    <body>
 
-    <div class="wrapper">
-   <h1>HANGMAN</h1>
+      <div class="wrapper">
+     <img id="hangman" src="imgP/background3.png" alt="">
 
-</div>
-<div class="wrapper">
+  </div>
+  <div class="wrapper">
 
-    <p id="catagoryName"></p>
-    <div id="hold">
-    </div>
-    <p id="mylives"></p>
- <p id="clue"></p>
-<div id="status"></div>
-     <canvas id="stickman"></canvas>
-    <div class="container">
-<div id="buttons"></div>
-      <button id="reset">Play again</button>
-    </div>
-    <input class="welcome" type="button" value="Home" onclick="location.href='index.html'">
-</div>
+      <p id="catagoryName"></p>
+      <div id="hold">
+      </div>
+      <p id="mylives"></p>
+   <p id="clue"></p>
+  <div id="status"></div>
+       <canvas id="stickman"></canvas>
+
+  <div id="buttons"></div>
+        <button id="reset">Play again</button>
+
+      <button type="button" name="button" onclick="location.href='index.html'">Home</button>
+  </div>
+  </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="main.js"></script>

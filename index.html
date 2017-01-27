@@ -4,22 +4,24 @@
     <meta charset="utf-8">
     <title>hangman</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
   </head>
-  <body class="firstPage">
-<div class= "welcomePage">
-<h1 id="mainPage">HANGMAN</h1>
-<p class="mainPageP">Guess letters to fill in the blanks before your little man gets hung out to dry.</p>
-<p class="mainPageP">Press start whenever you are ready!</p>
+  <div class="container">
+    <body>
+  <div class= "welcomePage">
+  <img id="hangman" src="imgP/background3.png" alt="hangman">
+  <p class="mainPageP">Guess letters to fill in the blanks before your little man gets hung out to dry.</p>
+  <p class="mainPageP">Press start whenever you are ready!</p>
 
 
-<input class="startGame" type="button" value="game" onclick="location.href='gamepage.html'">
+  <button type="button" name="button" onclick="location.href='gamepage.html'">Start</button>
 
-<div>
-  <img class="dancing" src="imgP/StickDancer.gif" alt="readingman">
-</div>
-</div>
+  <div>
+    <img class="dancing" src="imgP/StickDancer.gif" alt="readingman">
+  </div>
+  </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="main.js"></script>
